@@ -1,4 +1,4 @@
-class PokemonsController < ApplicationController
+class Api::PokemonsController < ApplicationController
   before_action :set_pokemon, only: [:show, :update, :destroy]
 
   # GET /pokemons
@@ -35,7 +35,11 @@ class PokemonsController < ApplicationController
 
   # DELETE /pokemons/1
   def destroy
-    @pokemon.destroy
+    if @pokemon.destroy
+      render status: 204
+    else
+      render json: { message: "Unable to remove this Pokemon" }, status: 400
+    end
   end
 
   private
