@@ -50,6 +50,6 @@ class Api::PokemonsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def pokemon_params
-      params.require(:pokemon).permit(:name, :description, :poke_type, :img_url)
+      params.require(:pokemon).permit(:name, :description, :poke_type, :img_url, :pokedex_num)
     end
 end

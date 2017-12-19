@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171219191353) do
+ActiveRecord::Schema.define(version: 20171219234255) do
 
   create_table "pokemons", force: :cascade do |t|
     t.string "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20171219191353) do
     t.string "img_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "pokedex_num"
   end
 
 end

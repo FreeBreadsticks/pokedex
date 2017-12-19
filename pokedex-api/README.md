@@ -16,6 +16,6 @@
 #Pokemon Model
 * name
 * description
-* location
+* pokedex_num
 * type
 * image url
