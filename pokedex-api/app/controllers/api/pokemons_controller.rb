@@ -18,7 +18,7 @@ class Api::PokemonsController < ApplicationController
     @pokemon = Pokemon.new(pokemon_params)
 
     if @pokemon.save
-      render json: @pokemon, status: :created, location: @pokemon
+      render json: @pokemon, status: :created
     else
       render json: @pokemon.errors, status: :unprocessable_entity
     end
@@ -50,6 +50,6 @@ class Api::PokemonsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def pokemon_params
-      params.require(:pokemon).permit(:name, :description, :location, :type, :img_url)
+      params.require(:pokemon).permit(:name, :description, :poke_type, :img_url)
     end
 end
