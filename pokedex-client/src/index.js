@@ -5,8 +5,16 @@ import App from './containers/App';
 import registerServiceWorker from './registerServiceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
+import configureStore from './stores/store';
+import {Provider} from 'react-redux';
+
+const store = configureStore();
+store.dispatch(loadPokemon())
 
 ReactDOM.render(
-  <App />, document.getElementById('root')
-  );
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);
 registerServiceWorker();

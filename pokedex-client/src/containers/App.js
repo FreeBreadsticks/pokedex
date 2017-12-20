@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import PokemonList from './PokemonList'
+import PokemonList from './PokemonList';
 import './App.css';
+import Navbar from '../components/Navbar';
+
 
 class App extends Component {
   constructor(props) {
@@ -21,9 +23,9 @@ class App extends Component {
   render() {
     console.log(this.state);
     return (
-      <div className="App">
-      <h1>Pokedex</h1>
-      <PokemonList pokemons={this.state.pokemon}/>
+      <div>
+        <Navbar />
+        <PokemonList pokemons={this.state.pokemon}/>
       </div>
     );
   }
