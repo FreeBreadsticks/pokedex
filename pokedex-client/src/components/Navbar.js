@@ -1,9 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <Router>
       <div className="navbar navbar-inverse">
         <div className="container-fluid">
           <div className="navbar-header">
@@ -16,7 +15,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </Router>
   )
 }
 

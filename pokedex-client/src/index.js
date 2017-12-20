@@ -11,7 +11,7 @@ import {loadPokemon} from './actions/pokemonActions';
 
 
 const store = configureStore();
-store.dispatch(loadPokemon());
+
 
 ReactDOM.render(
   <Provider store={store}>

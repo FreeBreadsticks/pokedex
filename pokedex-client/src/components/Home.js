@@ -4,12 +4,13 @@ import { Link } from 'react-router';
 const Home = () => {
 
     return (
-      <div className="jumbotron">
-        <h1>Pokedex</h1>
-        <p>Check out all of the fascinating Pokemon that you can find all over the world. Help us collect them all by adding new Pokemon!</p>
+      <div className="jumbotron jumbotron-fluid container">
+        <h1 className="display-3">Pokedex</h1>
+        <hr class="my-4" />
+        <p className="lead">Check out all of the fascinating Pokemon that you can find all over the world. Help us collect them all by adding new Pokemon!</p>
       </div>
     );
-  
+
 }
 
 

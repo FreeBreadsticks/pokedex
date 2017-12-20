@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import PokemonList from './PokemonList';
 import './App.css';
-import Routes from '../routes'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import Home from '../components/Home'
+
 
 class App extends Component {
   constructor(props) {
@@ -14,10 +17,13 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Routes />
-        <PokemonList pokemons={this.state.pokemons}/>
-      </div>
+      <Router>
+        <div>
+          <Navbar />
+          <Route exact path="/" component={Home} />
+          <Route path="/pokemons" component={PokemonList}/>
+        </div>
+      </Router>
     );
   }
 }

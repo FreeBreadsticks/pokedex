@@ -6,12 +6,19 @@ import * as pokemonActions from '../actions/pokemonActions';
 import {bindActionCreators} from 'redux';
 
 class PokemonList extends Component {
+  constructor(props){
+    super(props)
+  }
+
+  componentDidMount(){
+    this.props.actions.loadPokemon();
+  }
 
   render() {
     const sortedPokes = this.props.pokemons.sort(function(a, b) {
       return a.pokedex_num - b.pokedex_num
     })
-
+    console.log(this.props);
     return (
       <div className="container-fluid">
         <h1 className="App poke-title">The Pokedex</h1>
