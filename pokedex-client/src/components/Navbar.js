@@ -3,10 +3,12 @@ import { Link, IndexLink } from 'react-router';
 
 const Navbar = () => {
   return (
-    <IndexLink to="/" activeClassName="active">Home</IndexLink>
-    {" | "}
-    <Link to="/pokemons" activeClassName="active">Courses</Link>
-    {" | "}
-    <Link to="/about" activeClassName="active">About</Link>
+    <div>
+      <IndexLink to="/" activeClassName="active">Home</IndexLink>
+      {" | "}
+      <Link to="/pokemons" activeClassName="active">Courses</Link>
+      {" | "}
+      <Link to="/about" activeClassName="active">About</Link>
+    </div>
   )
 }

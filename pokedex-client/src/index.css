@@ -2,4 +2,60 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-image: url("https://orig00.deviantart.net/f4e1/f/2015/239/a/a/pokemon_x_and_y_vs_template_by_lil_riku-d6vkkr7.png");
+}
+
+.pokemon-card{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  width: 300px;
+  height: 400px;
+  float: left;
+  padding: 5px;
+  border-radius: 10%;
+  margin: 10px;
+  background-image: url("http://orig01.deviantart.net/7e8f/f/2010/254/3/7/pokedex_wallpaper_v1_by_bugbyte-d2yii0o.png");
+}
+
+.pokemon-card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.poke-img {
+  width:80px;
+  height: 80px;
+  border-radius: 50%;
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding:1px;
+  border:1px solid white;
+}
+
+.poke-name {
+  font-size: 1.6em;
+  color: white;
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.poke-number {
+
+}
+
+.poke-description {
+  text-align: left;
+  width: 220px;
+  margin-top: 100px;
+  margin-left: 60px;
+  border-radius: 5%;
+  background: linear-gradient(darkblue, lightblue);
+  color: white;
+  height:200px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
 }
