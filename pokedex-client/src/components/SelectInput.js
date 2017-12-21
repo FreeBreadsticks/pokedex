@@ -1,7 +1,7 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 
 
-const SelectInput = ({name, label, onChange, defaultOption, value, error, options}) => {
+const SelectInput = ({name, label, onChange, defaultOption, value, options}) => {
 
   return (
     <div className="form-group">
@@ -17,7 +17,6 @@ const SelectInput = ({name, label, onChange, defaultOption, value, error, option
             return <option key={option} value={option}>{option}</option>;
           })}
         </select>
-        {error && <div className="alert alert-danger">{error}</div>}
       </div>
     </div>
   );

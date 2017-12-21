@@ -4,6 +4,7 @@ import SelectInput from '../components/SelectInput';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as pokemonActions from '../actions/pokemonActions';
+import toastr from 'react-toastr';
 
 
 class PokemonForm extends Component {
@@ -12,7 +13,6 @@ class PokemonForm extends Component {
 
     this.state ={
       pokemon: Object.assign({}, props.pokemon),
-      errors: {},
       saving: false
     };
   }
@@ -29,13 +29,13 @@ class PokemonForm extends Component {
     this.props.actions.createPokemon(this.state.pokemon)
       .then(() => this.savedPokemon())
       .catch((error) => {
-        console.log(error);
+        this.setState({saving: false});
       })
   }
 
   savedPokemon = () => {
     this.setState({saving: false})
-    console.log("Saved");
+    this.context.history.push('/pokemons');
   }
 
 
@@ -45,6 +45,7 @@ class PokemonForm extends Component {
 
     return (
       <div className="container">
+        <h1>Add New Pokemon</h1>
         <form>
 
           <TextInput
@@ -52,16 +53,14 @@ class PokemonForm extends Component {
             name="name"
             label="Name"
             value={this.state.pokemon.name}
-            onChange={this.handleChange}
-            error={this.state.errors.name} />
+            onChange={this.handleChange} />
 
           <TextInput
             input_type="text"
             name="description"
             label="Description"
             value={this.state.pokemon.description}
-            onChange={this.handleChange}
-            error={this.state.errors.description} />
+            onChange={this.handleChange} />
 
           <SelectInput
             name="poke_type"
@@ -69,23 +68,21 @@ class PokemonForm extends Component {
             value={this.state.poke_type}
             defaultOption="Select Type"
             options={allTypes}
-            onChange={this.handleChange} error={this.state.errors.poke_type} />
+            onChange={this.handleChange}  />
 
           <TextInput
             input_type="text"
             name="img_url"
             label="Image Link"
             value={this.state.pokemon.img_url}
-            onChange={this.handleChange}
-            error={this.state.errors.img_url} />
+            onChange={this.handleChange} />
 
           <TextInput
             input_type="number"
             name="pokedex_num"
             label="Pokedex Number"
             value={this.state.pokemon.pokedex_num}
-            onChange={this.handleChange}
-            error={this.state.errors.pokedex_num} />
+            onChange={this.handleChange} />
 
           <input
             type="submit"
@@ -101,7 +98,7 @@ class PokemonForm extends Component {
 }
 
 function mapStateToProps(state, ownProps) {
-  let pokemon = {name: '', description: '', poke_type: '', img_url: '', pokedex_num: 0}
+  let pokemon = {name: '', description: '', poke_type: '', img_url: '', pokedex_num: 1}
 
   return {
     pokemon: pokemon

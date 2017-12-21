@@ -4,15 +4,14 @@ import PokemonForm from './PokemonForm';
 import {connect} from 'react-redux';
 import * as pokemonActions from '../actions/pokemonActions';
 import {bindActionCreators} from 'redux';
+import { Link } from 'react-router-dom';
 
 class PokemonList extends Component {
-  constructor(props){
-    super(props)
-  }
 
   componentDidMount(){
     this.props.actions.loadPokemon();
   }
+
 
   render() {
     const sortedPokes = this.props.pokemons.sort(function(a, b) {
@@ -22,8 +21,11 @@ class PokemonList extends Component {
     return (
       <div className="container-fluid">
         <h1 className="App poke-title">The Pokedex</h1>
-        <PokemonForm />
-        {sortedPokes.map(pokemon =>
+        <div className="text-center">
+          <Link to="/pokemon/new" className='text-center btn btn-warning' role="button">Add New Pokemon</Link>
+        </div>
+
+        {sortedPokes.length > 0 && sortedPokes.map(pokemon =>
           <PokemonCard key={pokemon.id} pokemon={pokemon}/>
         )}
         <br />

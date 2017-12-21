@@ -88,11 +88,22 @@ body {
 }
 
 .poke-title {
-  -webkit-font-smoothing: none;
-  font-family: 'pokemon-font', monospace;
+  color: white;
 }
 
 
 .App {
   text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  color: hsl(30, 70, 30);
 }
