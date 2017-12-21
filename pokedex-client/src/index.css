@@ -91,3 +91,8 @@ body {
   -webkit-font-smoothing: none;
   font-family: 'pokemon-font', monospace;
 }
+
+
+.App {
+  text-align: center;
+}

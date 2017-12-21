@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import configureStore from './stores/store';
 import {Provider} from 'react-redux';
-import {loadPokemon} from './actions/pokemonActions';
+
 
 
 const store = configureStore();

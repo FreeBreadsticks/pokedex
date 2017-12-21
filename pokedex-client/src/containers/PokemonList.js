@@ -26,6 +26,7 @@ class PokemonList extends Component {
         {sortedPokes.map(pokemon =>
           <PokemonCard key={pokemon.id} pokemon={pokemon}/>
         )}
+        <br />
       </div>
     )
   }
