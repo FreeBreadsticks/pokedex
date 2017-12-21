@@ -23,8 +23,19 @@ class PokemonForm extends Component {
     return this.setState({ pokemon: newPokemon })
   }
 
-  onSave = () => {
-    console.log("saving");
+  onSave = (event) => {
+    event.preventDefault();
+    this.setState({saving: true});
+    this.props.actions.createPokemon(this.state.pokemon)
+      .then(() => this.savedPokemon())
+      .catch((error) => {
+        console.log(error);
+      })
+  }
+
+  savedPokemon = () => {
+    this.setState({saving: false})
+    console.log("Saved");
   }
 
 
