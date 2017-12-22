@@ -114,10 +114,3 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(PokemonForm);
-// t.string "name"
-// t.string "description"
-// t.string "poke_type"
-// t.string "img_url"
-// t.datetime "created_at", null: false
-// t.datetime "updated_at", null: false
-// t.integer "pokedex_num"
