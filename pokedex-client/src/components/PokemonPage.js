@@ -9,7 +9,7 @@ const PokemonPage = ({pokemon}) => {
       <h4 className="poke-title App">Pokedex No: {pokemon.pokedex_num}</h4>
       <hr />
       <div className="poke-page-box">
-        <img src={pokemon.img_url} alt="" className="col-sm-4"/>
+        <img src={pokemon.img_url} alt="" className="poke-pic col-sm-4"/>
         <p className="col-sm-6 poke-word">{pokemon.description}</p>
         <p className="col-sm-2"><span className={'page-type poke-word ' + pokemon.poke_type}> {pokemon.poke_type}</span></p>
       </div>

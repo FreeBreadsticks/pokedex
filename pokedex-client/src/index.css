@@ -93,7 +93,7 @@ body {
 
 .home-poke-pic {
   margin-left: 155px;
-  align-content: flex-start;
+
 }
 
 .App {
@@ -415,4 +415,11 @@ h1 {
 
 .jumbotron {
   border-radius: 12px;
+}
+
+.poke-pic {
+  height: auto;
+    width: auto;
+    max-width: 280px;
+    max-height: 280px;
 }
