@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import PokemonCard from '../components/PokemonCard'
-import PokemonForm from './PokemonForm';
 import {connect} from 'react-redux';
 import * as pokemonActions from '../actions/pokemonActions';
 import {bindActionCreators} from 'redux';
@@ -17,17 +16,22 @@ class PokemonList extends Component {
     const sortedPokes = this.props.pokemons.sort(function(a, b) {
       return a.pokedex_num - b.pokedex_num
     })
-    console.log(this.props);
+
     return (
       <div className="container-fluid">
+
         <h1 className="App poke-title">The Pokedex</h1>
+
         <div className="text-center">
           <Link to="/pokemon/new" className='text-center btn btn-warning' role="button">Add New Pokemon</Link>
         </div>
+
         {sortedPokes.length > 0 && sortedPokes.map(pokemon =>
           <PokemonCard key={pokemon.id} pokemon={pokemon}/>
         )}
+        
         <br />
+
       </div>
     )
   }

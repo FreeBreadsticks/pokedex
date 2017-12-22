@@ -4,7 +4,7 @@ import SelectInput from '../components/SelectInput';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as pokemonActions from '../actions/pokemonActions';
-import toastr from 'react-toastr';
+// import toastr from 'react-toastr';
 
 
 class PokemonForm extends Component {
