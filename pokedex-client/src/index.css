@@ -43,7 +43,7 @@ body {
 .poke-description {
   text-align: left;
   width: 220px;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: 60px;
   border-radius: 5%;
   background: linear-gradient(darkblue, lightblue);
@@ -106,4 +106,276 @@ h1, h2, h3 {
 h1 {
   font-size: 3em;
   color: hsl(30, 70, 30);
+}
+
+
+
+.type {
+	margin: 10px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #68A090;
+	border: 1px solid #44685E;
+}
+
+.Normal {
+  margin-left: 220px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #A8A878;
+	border: 1px solid #6D6D4E;
+}
+
+.Fire {
+  margin-left: 239px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #F08030;
+	border: 1px solid #9C531F;
+}
+
+.Water {
+  margin-left: 225px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #6890F0;
+	border: 1px solid #445E9C;
+}
+
+.Electric {
+  margin-left: 215px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #F8D030;
+	border: 1px solid #A1871F;
+}
+
+.Grass {
+  margin-left: 220px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #78C850;
+	border: 1px solid #4E8234;
+}
+
+.Ice {
+  margin-left: 215px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #98D8D8;
+	border: 1px solid #638D8D;
+}
+
+.Ground {
+  margin-left: 215px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #E0C068;
+	border: 1px solid #927D44;
+}
+
+.Flying {
+  margin-left: 215px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #A890F0;
+	border: 1px solid #6D5E9C;
+}
+
+.Ghost {
+  margin-left: 215px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #705898;
+	border: 1px solid #493963;
+}
+
+.Rock {
+  margin-left: 215px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #B8A038;
+	border: 1px solid #786824;
+}
+
+.Fighting {
+  margin-left: 215px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #C03028;
+	border: 1px solid #7D1F1A;
+}
+
+.Poison {
+  margin-left: 215px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #A040A0;
+	border: 1px solid #682A68;
+}
+
+.Psychic {
+  margin-left: 215px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #F85888;
+	border: 1px solid #A13959;
+}
+
+.Bug {
+  margin-left: 215px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #A8B820;
+	border: 1px solid #6D7815;
+}
+
+.Dark {
+  margin-left: 215px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #705848;
+	border: 1px solid #49392F;
+}
+
+.Steel {
+  margin-left: 215px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #B8B8D0;
+	border: 1px solid #787887;
+}
+
+.Dragon {
+  margin-left: 215px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	font-size: 13px;
+	font-family: "helvetica neue", Helvetica, Verdana, sans-serif;
+	color: #FFF;
+	background-color: #7038F8;
+	border: 1px solid #4924A1;
 }

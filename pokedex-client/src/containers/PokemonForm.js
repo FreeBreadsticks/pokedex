@@ -35,7 +35,7 @@ class PokemonForm extends Component {
 
   savedPokemon = () => {
     this.setState({saving: false})
-    this.context.history.push('/pokemons');
+    this.props.history.push('/pokemons');
   }
 
 
@@ -96,6 +96,7 @@ class PokemonForm extends Component {
     )
   }
 }
+
 
 function mapStateToProps(state, ownProps) {
   let pokemon = {name: '', description: '', poke_type: '', img_url: '', pokedex_num: 1}
