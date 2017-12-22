@@ -1,5 +1,6 @@
 import React from 'react';
 import EllipsisText  from 'react-ellipsis-text';
+import {Link} from 'react-router-dom';
 
 const PokemonCard = ({pokemon}) => {
   return (
@@ -11,6 +12,7 @@ const PokemonCard = ({pokemon}) => {
       <div className="poke-description">
         <EllipsisText text={pokemon.description} length={130} />
       </div>
+      <Link to={'/pokemons/' + pokemon.id } className="btn btn-info poke-button">Learn More</Link>
     </div>
   );
 }

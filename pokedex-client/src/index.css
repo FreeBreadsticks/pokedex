@@ -96,7 +96,7 @@ body {
   text-align: center;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -378,4 +378,33 @@ h1 {
 	color: #FFF;
 	background-color: #7038F8;
 	border: 1px solid #4924A1;
+}
+
+.page-type {
+  margin-left: 20px !important;
+  margin-top: 10px !important;
+  padding: 10px 16px 10px 16px;
+}
+.poke-page-box {
+  background-color: white;
+  border-radius: 10px;
+  height: 300px;
+  margin: 10px;
+  padding: 20px;
+  margin: 20px auto 20px auto;
+  width: 90%;
+}
+
+.poke-word {
+  font-size: 1.3em;
+  text-align: justify;
+}
+
+.poke-hr {
+  color: black !important;
+}
+
+.poke-button {
+  margin-left: 65px;
+  margin-top: 12px;
 }
