@@ -24,7 +24,6 @@ class PokemonList extends Component {
         <div className="text-center">
           <Link to="/pokemon/new" className='text-center btn btn-warning' role="button">Add New Pokemon</Link>
         </div>
-
         {sortedPokes.length > 0 && sortedPokes.map(pokemon =>
           <PokemonCard key={pokemon.id} pokemon={pokemon}/>
         )}

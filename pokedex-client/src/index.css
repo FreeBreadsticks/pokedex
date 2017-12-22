@@ -91,6 +91,10 @@ body {
   color: white;
 }
 
+.home-poke-pic {
+  margin-left: 155px;
+  align-content: flex-start;
+}
 
 .App {
   text-align: center;
@@ -407,4 +411,8 @@ h1 {
 .poke-button {
   margin-left: 65px;
   margin-top: 12px;
+}
+
+.jumbotron {
+  border-radius: 12px;
 }

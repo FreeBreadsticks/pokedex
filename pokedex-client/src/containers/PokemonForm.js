@@ -45,7 +45,8 @@ class PokemonForm extends Component {
 
     return (
       <div className="container">
-        <h1>Add New Pokemon</h1>
+        <h1 className="poke-title">Add New Pokemon</h1>
+        <hr />
         <form>
 
           <TextInput
